@@ -542,7 +542,9 @@ template {
   font-size: 14px;
   font-family: "TT Lakes", sans-serif;
   color: #1B1C21;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto; }
   @media screen and (min-width: 1120px) {
     .page {
       flex-direction: row; } }
@@ -789,7 +791,8 @@ template {
             margin-block-start: 0;
     -webkit-margin-after: 16px;
             margin-block-end: 16px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: height 500ms ease-in; }
     @media screen and (min-width: 768px) {
       .about-text__text {
         height: 160px;
@@ -1100,6 +1103,44 @@ template {
     color: #1B1C21;
     text-decoration: none;
     font-weight: 500; }
+
+.footer {
+  height: auto;
+  background-color: #F8F8F8;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: #D9FFF5 solid 1px; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 32px 24px 25px 24px; } }
+  @media screen and (min-width: 1120px) {
+    .footer {
+      padding: 32px 32px 21px 32px; } }
+  .footer div {
+    padding: 16px 4px 19px 4px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .footer div {
+        padding: 0;
+        width: 33.33%; }
+        .footer div:first-child {
+          text-align: left; }
+        .footer div:last-child {
+          text-align: right; } }
+    .footer div p,
+    .footer div a {
+      font-family: "TT Lakes", sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7E7E82;
+      opacity: 0.72; }
+    .footer div a {
+      text-decoration: none; }
 
 
 /*# sourceMappingURL=style.css.map*/
